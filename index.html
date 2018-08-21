@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>User Registration</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script type="text/javascript" src="./javascript/validation.js"></script>
+	</head>
+	<body>
+		<section class="form-container">
+			<div><h1>User Registration</h1></div>
+			<form id="userRegistration" class="form">
+				<ul>
+					<li>
+						<label for="firstName">First Name</label>
+						<input type="text" id="firstName" name="firstName" value="">		
+						<span id="errMsgFirstName" class="error-message"></span>
+					</li>
+					<li>
+						<label for="lastName">Last Name</label>
+						<input type="text" id="lastName" name="lastName" value="">		
+						<span id="errMsgLastName" class="error-message"></span>
+					</li>
+					<li>
+						<label for="phoneNumber">Phone Number</label>
+						<input type="text" id="phoneNumber" name="phoneNumber" value="">
+						<span id="errMsgPhoneNumber" class="error-message"></span>		
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="text" id="email" name="email" value="">
+						<span id="errMsgEmail" class="error-message"></span>		
+					</li>
+					<li>
+						<label for="address">Address</label>
+						<textarea id="address" name="address" value=""></textarea>
+						<span id="errMsgAddress" class="error-message"></span>		
+					</li>
+					<li>
+						<label>City</label>
+						<select id="city" name="city">
+							<option value="mumbai">Mumbai</option>
+							<option value="pune">Pune</option>
+							<option value="bangalore">Bangalore</option>
+							<option value="hyderabad">Hyderabad</option>
+							<option value="delhi">Delhi</option>
+							<option value="other">Other</option>
+						</select>
+						<span id="errMsgCity" class="error-message"></span>
+					</li>
+					<li>
+						<label>Male<input type="radio" name="gender" id="male" value="Male" checked></label>
+						<label>Female<input type="radio" name="gender" id="female" value="Female"></label>
+						<label>Trans<input type="radio" name="gender" id="trans" value="Trans"></label>
+						<span id="errMsgGender" class="error-message"></span>	
+					</li>
+				</ul>
+				<input type="submit" value="Register" class="register-btn">
+				<div id="errMsgForm" class="error-message"></div>
+			</form>
+		</section>
+	</body>
+</html>
